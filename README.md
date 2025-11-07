@@ -9,15 +9,15 @@
 #### (一) 支持workers、pages、snippets部署，vless+ws+tls代理节点
 #### (二) 极大的丰富了反代功能的使用
 v2rayN客户端的单节点路径设置代理ip，通过代理客户端路径传递<br>
-支持IPV4、IPV6、域名三种方式（**端口为443时，可不写:port**）,以下任选其一<br>
+支持IPV4、IPV6、域名三种方式（**端口为443时，可不写:port**）,socks5或http支持**用户名:密码或者为空**以下任选其一<br>
 | 代理类型 | IPv4形式 | IPv6形式 | 域名形式 |
 |------|------|------|------|
-| socks5全局代理 |s5all=user:password@IPv4:port|s5all=user:password@[IPv6]:port |s5all=user:password@domain:port|
-| http或者https全局代理 |httpall=user:password@IPv4:port|httpall=user:password@[IPv6]:port|httpall=user:password@domain:port|
-| http或者https代理cf网站 |http=user:password@IPv4:port|http=user:password@[IPv6]:port|http=user:password@domain:port|
-| http或者https代理cf网站 |`http://user:password@IPv4:port`|http://user:password@[IPv6]:port|`http://user:password@domain:port`|
-| socks5代理cf网站 |socks5=user:password@IPv4:port|socks5=user:password@[IPv6]:port|socks5=user:password@domain:port|
-| socks5代理cf网站 |socks5://user:password@IPv4:port|socks5://user:password@[IPv6]:port|socks5://user:password@domain:port|
+| socks5全局代理 |s5all=IPv4:port|s5all=[IPv6]:port |s5all=domain:port|
+| http或者https全局代理 |httpall=IPv4:port|httpall=[IPv6]:port|httpall=domain:port|
+| http或者https代理cf网站 |http=IPv4:port|http=[IPv6]:port|http=domain:port|
+| http或者https代理cf网站 |`http://IPv4:port`|http://[IPv6]:port|`http://domain:port`|
+| socks5代理cf网站 |socks5=IPv4:port|socks5=[IPv6]:port|socks5=domain:port|
+| socks5代理cf网站 |socks5://IPv4:port|socks5://[IPv6]:port|socks5://domain:port|
 | proxyip代理cf网站 |pyip=IPv4:port|pyip=[IPv6]:port|pyip=domain:port|
 | proxyip代理cf网站 |proxyip=IPv4:port|proxyip=[IPv6]:port|proxyip=domain:port|
 | nat64代理cf网站 | |nat64pf=[2602:fc59:b0:64::]| |
